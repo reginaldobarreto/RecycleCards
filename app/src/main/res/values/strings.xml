@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RecycleCards</string>
+    <string name="btn_curtir">CURTIR</string>
+    <string name="btn_comentar">COMENTAR</string>
 </resources>
