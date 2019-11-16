@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
     <LinearLayout
         android:layout_marginTop="8dp"
         android:layout_width="match_parent"
@@ -14,18 +20,23 @@
 
         <TextView
             android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
             android:id="@+id/textViewTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Title" />
 
         <TextView
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
             android:id="@+id/textViewSubTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="SubTitle" />
 
         <ImageView
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="8dp"
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -33,6 +44,8 @@
 
         <TextView
             android:id="@+id/textViewDescribe"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Describe" />
@@ -43,6 +56,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:padding="8dp"
                 android:layout_margin="8dp"
                 android:id="@+id/buttonCurtir"
                 android:layout_width="wrap_content"
@@ -52,6 +66,7 @@
                 style="@style/Widget.AppCompat.Button.Borderless"/>
 
             <Button
+                android:padding="8dp"
                 android:layout_margin="8dp"
                 android:id="@+id/buttonComentar"
                 android:layout_width="wrap_content"
@@ -63,5 +78,8 @@
         </LinearLayout>
 
     </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
 
 </LinearLayout>
