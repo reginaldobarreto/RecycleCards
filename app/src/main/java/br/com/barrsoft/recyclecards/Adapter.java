@@ -4,9 +4,12 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class Adapter extends RecyclerView.Adapter<VHProject> {
 
 
+    private List<Modelo> modelList;
 
     @NonNull
     @Override
