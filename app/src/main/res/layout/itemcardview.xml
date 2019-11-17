@@ -21,8 +21,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:background="@color/cardview_shadow_start_color"
             android:orientation="vertical"
+            android:background="@color/cardview_shadow_start_color"
             android:padding="8dp">
 
             <TextView
@@ -30,7 +30,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:text="Title"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:text="SubTitle"
                 android:textSize="12sp" />
 
@@ -50,7 +50,7 @@
                 android:layout_height="200dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginEnd="8dp"
                 app:srcCompat="@drawable/image1" />
 
@@ -59,7 +59,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="4dp"
                 android:text="Describe" />
 
             <LinearLayout

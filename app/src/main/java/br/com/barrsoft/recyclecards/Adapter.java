@@ -3,6 +3,8 @@ package br.com.barrsoft.recyclecards;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -43,13 +45,13 @@ public class Adapter extends RecyclerView.Adapter<VHProject> {
         holder.comentar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(holder.itemView.getContext(),"Comentar",Toast.LENGTH_SHORT).show();
             }
         });
         holder.curtir.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Toast.makeText(holder.itemView.getContext(),"Curtir",Toast.LENGTH_SHORT).show();
             }
         });
     }
