@@ -16,7 +16,7 @@ public class Adapter extends RecyclerView.Adapter<VHProject> {
 
     private List<Modelo> list;
 
-    public Adapter(List<Modelo> list) {
+    Adapter(List<Modelo> list) {
         this.list = list;
     }
 
@@ -39,6 +39,7 @@ public class Adapter extends RecyclerView.Adapter<VHProject> {
                 .load(modelo.getDrawable())
                 .centerCrop()
                 .into(holder.imagem);
+
         holder.comentar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
