@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     Adapter adapter;
     List<Modelo> list = new ArrayList<>();
     Modelo modelo;
+    Modelo modelo1;
+    Modelo modelo2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,7 +31,11 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         modelo = new Modelo("Titulo Teste", "Sub Titulo","Descrição", getResources().getDrawable(R.drawable.image1));
+        modelo1 = new Modelo("Titulo Teste", "Sub Titulo","Descrição", getResources().getDrawable(R.drawable.image2));
+        modelo2 = new Modelo("Titulo Teste", "Sub Titulo","Descrição", getResources().getDrawable(R.drawable.image3));
         list.add(modelo);
+        list.add(modelo1);
+        list.add(modelo3);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter(list);
         recyclerView.setAdapter(adapter);
