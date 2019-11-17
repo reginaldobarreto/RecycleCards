@@ -12,7 +12,7 @@ import butterknife.ButterKnife;
 public class VHProject extends RecyclerView.ViewHolder {
 
     @BindView(R.id.textViewTitle)
-    public TextView iitle;
+    public TextView title;
     @BindView(R.id.textViewSubTitle)
     public TextView subTitle;
     @BindView(R.id.textViewDescribe)
