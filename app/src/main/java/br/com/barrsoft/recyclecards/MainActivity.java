@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         modelo2 = new Modelo("Titulo Teste", "Sub Titulo","Descrição", getResources().getDrawable(R.drawable.image3));
         list.add(modelo);
         list.add(modelo1);
-        list.add(modelo3);
+        list.add(modelo2);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new Adapter(list);
         recyclerView.setAdapter(adapter);
