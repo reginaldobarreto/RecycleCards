@@ -1,5 +1,6 @@
 package br.com.barrsoft.recyclecards;
 
+import android.graphics.drawable.Drawable;
 import android.widget.ImageView;
 
 class Modelo {
@@ -7,13 +8,13 @@ class Modelo {
     private String title;
     private String subTitle;
     private String descricao;
-    private ImageView imagem;
+    private Drawable drawable;
 
-    public Modelo(String title, String subTitle, String descricao, ImageView imagem) {
+    public Modelo(String title, String subTitle, String descricao, Drawable drawable) {
         this.title = title;
         this.subTitle = subTitle;
         this.descricao = descricao;
-        this.imagem = imagem;
+        this.drawable = drawable;
     }
 
     public String getTitle() {
@@ -40,11 +41,11 @@ class Modelo {
         this.descricao = descricao;
     }
 
-    public ImageView getImagem() {
-        return imagem;
+    public Drawable getDrawable() {
+        return drawable;
     }
 
-    public void setImagem(ImageView imagem) {
-        this.imagem = imagem;
+    public void setDrawable(Drawable drawable) {
+        this.drawable = drawable;
     }
 }

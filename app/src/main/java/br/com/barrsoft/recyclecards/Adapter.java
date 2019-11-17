@@ -15,6 +15,10 @@ public class Adapter extends RecyclerView.Adapter<VHProject> {
 
     private List<Modelo> list;
 
+    public Adapter(List<Modelo> list) {
+        this.list = list;
+    }
+
     @NonNull
     @Override
     public VHProject onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -31,7 +35,7 @@ public class Adapter extends RecyclerView.Adapter<VHProject> {
         holder.descricao.setText(modelo.getDescricao());
         Glide
                 .with(holder.itemView)
-                .load(modelo.getImagem())
+                .load(modelo.getDrawable())
                 .centerCrop()
                 .into(holder.imagem);
         holder.comentar.setOnClickListener(new View.OnClickListener() {
